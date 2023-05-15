@@ -1,0 +1,2 @@
+# Django_Service_Friends
+Регистрация пользователя

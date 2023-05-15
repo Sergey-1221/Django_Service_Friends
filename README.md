@@ -42,28 +42,28 @@ GET /friend-request/receive/
 
 GET friend-request/accept/?type=id&id=<id_user> 
 
-GET friend-request/accept/?type=name&id=<name_user>
+GET friend-request/accept/?type=name&name=<name_user>
 
 # Отклонить пользователю заявку в друзья
 Отклонить пользователю заявку в друзья от другого пользователя (Необходима авторизация по токену)
 
 GET friend-request/cancel/?type=id&id=<id_user> 
 
-GET friend-request/cancel/?type=name&id=<name_user>
+GET friend-request/cancel/?type=name&name=<name_user>
 
 # Отклонить пользователю заявку в друзья
 Отклонить пользователю заявку в друзья от другого пользователя (Необходима авторизация по токену)
 
 GET friend-request/cancel/?type=id&id=<id_user> 
 
-GET friend-request/cancel/?type=name&id=<name_user>
+GET friend-request/cancel/?type=name&name=<name_user>
 
 # Отправить заявку в друзья
 Отправить одному пользователю заявку в друзья другому (Необходима авторизация по токену)
 
 GET friend-request/send/?type=id&id=<id_user> 
 
-GET friend-request/send/?type=name&id=<name_user>
+GET friend-request/send/?type=name&name=<name_user>
 
 *если пользователь1 отправляет заявку в друзья пользователю2, а пользователь2 отправляет заявку пользователю1, то они автоматом становятся друзьями, их заявки автоматом принимаются
 
@@ -72,14 +72,14 @@ GET friend-request/send/?type=name&id=<name_user>
 
 GET friend/delete/?type=id&id=<id_user> 
 
-GET friend/delete/?type=name&id=<name_user>
+GET friend/delete/?type=name&name=<name_user>
 
 # Получить статус дружбы с другим пользователем
 Получить пользователю статус дружбы с каким-то другим пользователем (Необходима авторизация по токену)
 
 GET friend/status/?type=id&id=<id_user>
 
-GET friend/status/?type=name&id=<name_user>
+GET friend/status/?type=name&name=<name_user>
 
 
 

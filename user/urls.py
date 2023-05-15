@@ -11,6 +11,7 @@ urlpatterns = [
     path('friend-request/sender/', views.FriendSender.as_view()),
     path('friend-request/receive/', views.FriendRecipient.as_view()),
     path('friend-request/accept/', views.FriendAcceptRequest.as_view()),
+    path('friend-request/cancel/', views.FriendCancelRequest.as_view()),
     path('friend-request/send/', views.FriendSendRequest.as_view()),
     path('friend/delete/', views.FriendDelete.as_view()),
     path('friend/status/', views.FriendStatus.as_view()),
